@@ -1,3 +1,5 @@
+@import "../../app//colors";
+
 .container {
   position: fixed;
   top: 0;
@@ -6,11 +8,95 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  > span {
-    padding: 10px;
-    border-top: 1px solid red;
+  height: 100%;
+  max-width: 100px;
+
+  > img {
+    cursor: pointer;
   }
-  > span:last-of-type {
-    border-bottom: 1px solid red;
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto 0;
+    gap: 100px;
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      > span {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid $primaryRedColor;
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          color: $primaryRedColor;
+        }
+      }
+      > span:last-of-type {
+        border-bottom: 1px solid $primaryRedColor;
+      }
+    }
+
+    .icons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 5px;
+
+      svg {
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          color: $primaryRedColor;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    width: 100%;
+    height: 110px;
+    max-width: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .center {
+      position: absolute;
+      top: 110px;
+      visibility: hidden;
+      display: flex;
+      opacity: 0;
+      transition: visibility 0s linear 0.4s, opacity 0.4s;
+      background-color: rgba(0, 0, 0, 0.5);
+      gap: 30px;
+      .nav {
+        span {
+          border: none;
+        }
+      }
+      .icons {
+        justify-content: center;
+        gap: 15px;
+      }
+    }
+
+    .open {
+      position: absolute;
+      display: flex;
+      top: 110px;
+      transition: top 0.4s, opacity 0.4s;
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
