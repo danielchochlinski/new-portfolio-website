@@ -4,4 +4,11 @@
   min-height: 100vh;
   max-width: 1552px;
   margin: auto;
+  padding-left: 110px;
+}
+@media screen and (max-width: 1050px) {
+  .main {
+    padding-left: 0;
+    padding: 0 15px;
+  }
 }

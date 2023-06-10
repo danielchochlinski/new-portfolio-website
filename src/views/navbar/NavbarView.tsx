@@ -6,31 +6,34 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import Tooltip from "@mui/material/Tooltip";
 
-// const getWidth = () => window.innerWidth;
-
+const getWidth = () => window.innerWidth;
 const NavbarView = () => {
   const [screenWidth, setScreenWidth] = useState(120);
   const [navOpen, setNavOpen] = useState(false);
 
-  //   useEffect(() => {
-  //     const handleResize = () => {
-  //       setScreenWidth(getWidth());
-  //     };
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(getWidth());
+    };
 
-  //     window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
 
-  //     // Cleanup the event listener on component unmount
-  //     return () => {
-  //       window.removeEventListener("resize", handleResize);
-  //     };
-  //   }, []);
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
-    <div className={styles.container}>
+    <div
+      className={
+        !navOpen ? styles.container : `${styles.container} ${styles.active}`
+      }
+    >
       <Image
         src="/dch-logo.svg"
-        width={`${screenWidth > 720 ? "150" : "110"}`}
-        height={`${screenWidth > 720 ? "150" : "110"}`}
+        width={`${screenWidth > 767 ? "150" : "110"}`}
+        height={`${screenWidth > 767 ? "150" : "110"}`}
         alt="dchLogo"
       />
 

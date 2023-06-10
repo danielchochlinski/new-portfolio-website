@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .info {
+    width: 100%;
+    padding-left: 80px;
+    p {
+      line-height: 1.5;
+    }
+  }
+  .tagCloud {
+    position: relative;
+    height: 600px;
+    width: 140%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    flex-direction: column;
+    .tagCloud {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    .info {
+      padding-left: 0;
+    }
+  }
+}
