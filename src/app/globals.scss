@@ -358,7 +358,7 @@ a {
 }
 @media screen and (max-width: 500px) {
   .swiper {
-    width: 72%;
+    width: 80%;
   }
   .card {
     height: 400;
@@ -386,7 +386,7 @@ a {
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   transition: transform 0.1s;
-  width: 50px;
+  width: 45px;
 
   $transition-time: 0.15s;
 
@@ -452,13 +452,13 @@ a {
 }
 @media screen and (max-width: 700px) {
   .arrow {
-    width: 45px;
+    width: 35px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .arrow {
-    width: 35px;
+    width: 25px;
   }
 }
 
