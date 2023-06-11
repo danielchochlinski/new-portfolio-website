@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import styles from "./AboutMeView.module.scss";
+import { Element } from "react-scroll";
 
 function AboutMeView(props: any) {
   useEffect(() => {
@@ -28,6 +29,9 @@ function AboutMeView(props: any) {
           "Node.js",
           "Express",
           "Material UI",
+          "Wagmi",
+          "Ethers JS",
+          "Thirdweb",
         ],
         {
           radius: screen.width > 500 ? 320 : 100,
@@ -50,11 +54,11 @@ function AboutMeView(props: any) {
 
   return (
     // todo: add hand holding sphere
-    <div id="about-me" className={styles.container}>
+    <Element name="about-me" id="about-me" className={styles.container}>
       <div className={styles.info} id="about-me">
         <h2>About Me</h2>
         <p>
-          I am a front end developer with a year of expirience.
+          Full Stack Developer with two years of expirience.
           <br />
           <br />
           I enjoy creating what you see, finding solutions to various problem
@@ -69,7 +73,7 @@ function AboutMeView(props: any) {
       <div className={styles.tagCloud}>
         <div className={"tagcloud-container"} />
       </div>
-    </div>
+    </Element>
   );
 }
 

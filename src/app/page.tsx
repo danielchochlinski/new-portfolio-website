@@ -6,17 +6,22 @@ import HeroView from "@/views/home/hero/HeroView";
 import ProjectsView from "@/views/home/projects/ProjectsView";
 import NavbarView from "@/views/navbar/NavbarView";
 import ContactView from "@/views/home/contact/ContactView";
+import NotificationProvider from "@/context/notifications/NotificationProvider";
 
 export default function Home() {
   return (
     <>
-      <HeroView />
-      <main className={styles.main}>
-        <NavbarView />
-        <ProjectsView />
-        <AboutMeView />
-      </main>
-      <ContactView />
+      <NotificationProvider>
+        <>
+          <HeroView />
+          <main className={styles.main}>
+            <NavbarView />
+            <ProjectsView />
+            <AboutMeView />
+          </main>
+          <ContactView />
+        </>
+      </NotificationProvider>
     </>
   );
 }

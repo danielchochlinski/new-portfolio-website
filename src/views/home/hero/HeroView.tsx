@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Birds from "vanta/dist/vanta.birds.min"; // Import the Vanta.js birds effect
 import Script from "next/script";
 import styles from "./HeroVIew.module.scss";
+import { Element } from "react-scroll";
 const HeroView: React.FC = () => {
   const vantaRef = useRef<HTMLDivElement>(null);
 
@@ -31,10 +32,12 @@ const HeroView: React.FC = () => {
 
   return (
     <div ref={vantaRef} className={styles.container}>
-      <div>
-        <h1>Daniel Chochlinski</h1>
-        <span>Front End Developer</span>
-      </div>
+      <Element name="hero">
+        <div>
+          <h1>Daniel Chochlinski</h1>
+          <span>Front End Developer</span>
+        </div>
+      </Element>
     </div>
   );
 };

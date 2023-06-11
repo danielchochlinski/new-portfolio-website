@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import styles from "./ProjectsView.module.scss";
-import Card from "./components/Card";
 import RowView from "./components/RowView";
 import SwiperVIew from "./components/SwiperView";
-const array = [1, 1, 1, 1];
+import { Element } from "react-scroll";
 
 const getWidth = () => window.innerWidth;
 const ProjectsView = () => {
-  const [screenWidth, setScreenWidth] = useState(120);
+  const [screenWidth, setScreenWidth] = useState<number>(1200);
   const [navOpen, setNavOpen] = useState(false);
 
   useEffect(() => {
+    setScreenWidth(window.innerWidth);
     const handleResize = () => {
       setScreenWidth(getWidth());
     };
@@ -23,11 +23,11 @@ const ProjectsView = () => {
     };
   }, []);
   return (
-    <div className={styles.container}>
+    <Element name="projects" className={styles.container}>
       <h3>Projects</h3>
       {/* <div className={styles.nav}></div> */}
       {screenWidth < 1050 ? <SwiperVIew /> : <RowView />}
-    </div>
+    </Element>
   );
 };
 
