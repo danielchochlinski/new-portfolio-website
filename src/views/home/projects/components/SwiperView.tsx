@@ -34,8 +34,8 @@ const SwiperVIew = () => {
         loop={true}
       >
         {projects.map((el) => (
-          <SwiperSlide>
-            <Card key={`${el.title}swiper`} data={el} />
+          <SwiperSlide key={`${el.title}swiper`}>
+            <Card data={el} />
           </SwiperSlide>
         ))}
       </Swiper>
