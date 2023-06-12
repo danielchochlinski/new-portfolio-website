@@ -7,17 +7,18 @@ import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import projects from "@/assets/projects.json";
 // import required modules
 import { Pagination } from "swiper";
-import Card from "./Card";
-
-const SwiperVIew = () => {
+import Card from "../../../home/projects/components/Card";
+import Image from "next/image";
+const style = {
+  borderRadius: "16px",
+};
+const SwiperVIew = ({ data }: any) => {
   const [swiperRef, setSwiperRef] = useState<SwiperClass>();
   const handlePrevious = useCallback(() => {
     swiperRef?.slidePrev();
   }, [swiperRef]);
-
   const handleNext = useCallback(() => {
     swiperRef?.slideNext();
   }, [swiperRef]);
@@ -33,9 +34,15 @@ const SwiperVIew = () => {
         className="mySwiper"
         loop={true}
       >
-        {projects.map((el) => (
+        {data?.images?.map((el: any) => (
           <SwiperSlide>
-            <Card key={`${el.title}swiper`} data={el} />
+            <img
+              src={el.photo}
+              // width={1200}
+              // height={300}
+              alt={el.photo}
+              style={style}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

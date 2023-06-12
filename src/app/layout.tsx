@@ -1,6 +1,7 @@
 import "./globals.scss";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,11 @@ export default function RootLayout({
           src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
           strategy="beforeInteractive"
         />
+        <Script
+          src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"
+          strategy="beforeInteractive"
+        />
+        <Analytics />
       </html>
     </>
   );

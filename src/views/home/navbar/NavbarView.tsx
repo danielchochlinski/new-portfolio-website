@@ -97,15 +97,34 @@ const NavbarView = () => {
         </div>
 
         <div className={styles.icons}>
-          <Tooltip title="GitHub" placement="bottom">
-            <GitHubIcon />
-          </Tooltip>
-          <Tooltip title="Linkedin" placement="bottom">
-            <LinkedInIcon />
-          </Tooltip>
-          <Tooltip title="DownloadResume" placement="bottom">
-            <CloudDownloadIcon />
-          </Tooltip>
+          <a
+            href="https://www.linkedin.com/in/daniel-chochlinski-a31337182/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Tooltip title="Linkedin" placement="bottom">
+              <LinkedInIcon />
+            </Tooltip>
+          </a>
+          <a
+            href="https://github.com/danielchochlinski"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Tooltip title="GitHub" placement="bottom">
+              <GitHubIcon />
+            </Tooltip>
+          </a>
+          <a
+            href="/Resume.pdf"
+            download="Resume"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Tooltip title="DownloadResume" placement="bottom">
+              <CloudDownloadIcon />
+            </Tooltip>
+          </a>
         </div>
       </div>
     </div>

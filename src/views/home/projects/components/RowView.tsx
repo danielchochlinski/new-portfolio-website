@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../ProjectsView.module.scss";
 import Card from "./Card";
-import projects from "./projects.json";
+import projects from "@/assets/projects.json";
 
 const RowView = () => {
   return (

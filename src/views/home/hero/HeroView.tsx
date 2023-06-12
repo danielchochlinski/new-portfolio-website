@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Birds from "vanta/dist/vanta.birds.min"; // Import the Vanta.js birds effect
-import Script from "next/script";
+import Birds from "vanta/dist/vanta.birds.min";
 import styles from "./HeroVIew.module.scss";
 import { Element } from "react-scroll";
 const HeroView: React.FC = () => {
@@ -17,7 +16,7 @@ const HeroView: React.FC = () => {
         minWidth: 200.0,
         scale: 1.0,
         scaleMobile: 1.0,
-        color1: 0x90909,
+        color1: 0x5c244f,
         color2: 0xff0077,
         backgroundColor: 0x0,
       });
