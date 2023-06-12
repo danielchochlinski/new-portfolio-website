@@ -1,12 +1,36 @@
 [
   {
+    "url": "iiyama",
+    "title": "IIyama",
+    "des": "",
+    "s_des": "Enhancing IIyama's online presence through maintenance and feature implementation.",
+    "tags": ["MERN"],
+    "bg_img": "/iiyama/iiyama.png",
+    "pageURL": "https://iiyama.com/gl_en/",
+    "images": [{ "photo": "/iiyama/iiyama.png" }]
+  },
+  {
+    "url": "mlekpol",
+    "title": "Mlekpol Lottery",
+    "des": "Mlekpol lottery, a leading dairy industry company in Poland. The application serves as a lottery system, handling a large amount of traffic from participants nationwide. As the lead developer, I took charge of the entire development process, from conception to implementation. I designed and built the application, ensuring its scalability and performance to handle the high volume of participants. The backend infrastructure was carefully designed to efficiently handle the load, utilizing scalable technologies and optimized algorithms. I implemented secure authentication and data encryption to protect user information. Collaborating closely with the UX/UI team, I incorporated their specific requirements and feedback into the application. Rigorous testing was conducted to ensure a seamless and secure lottery experience for participants. By delivering this full-stack application. This project showcased my expertise in full-stack development, application architecture, and effective project management.",
+    "s_des": "Mlekpol lottery, nationwide lottery system.",
+    "tags": ["MERN"],
+    "bg_img": "/mlekpol/mlekpol.png",
+    "pageURL": "https://loteria.naturadobregosera.pl/",
+    "images": [
+      { "photo": "/mlekpol/1.png" },
+      { "photo": "/mlekpol/2.png" },
+      { "photo": "/mlekpol/3.png" }
+    ]
+  },
+  {
     "url": "bug-tracker",
     "title": "Bug Tracker",
     "des": "Bug Tracker has always been a project close to my heart. It started with a simple static HTML page and JavaScript functionality. With my growing expertise in React and Next.js, I created an enhanced version with more features. \n\nNow, I've set my sights on an ambitious goal - building a simplified Jira-like project. To ensure a well-designed application, I recruited a talented team of UX/UI designers, with a dedicated lead to oversee the design process. As the project lead and full-stack developer, I'm responsible for overseeing the entire development process. This role has been a valuable learning experience, helping me grow as both an engineer and a leader. Collaborating closely with the UX/UI team, I've gained insights into user-centric design and its impact on the application's success. Currently in the development phase, I'm actively building the backend functionality. Each milestone achieved teaches me valuable lessons in project management, teamwork, and technical implementation. Creating this simplified Jira is a passion project that allows me to lead a talented team. It deepens my understanding of full-stack development and hones my skills as a technical professional and leader. As the project progresses, I'm excited to continue learning, refining my expertise, and delivering a high-quality bug tracking solution that meets user needs. This experience contributes to my growth as a full-stack engineer and leader in the field.",
     "s_des": "Jire like project, my own iniciative.",
     "tags": ["MERN"],
     "bg_img": "/bug-tracker/TheBugTracker.png",
-    "pageURL": "https://amuzed.io/",
+    "githubURL": "https://github.com/danielchochlinski/Backend-Bug-Tracker",
     "images": [{ "photo": "/bug-tracker/TheBugTracker.png" }]
   },
   {

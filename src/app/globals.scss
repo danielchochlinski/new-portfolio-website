@@ -214,7 +214,9 @@ a {
   border-radius: 28px;
   border-bottom: 1px solid $primaryRedColor;
   transition: 0.2s ease-in-out;
-  min-width: 320px;
+  max-width: 320px;
+  width: 100%;
+  min-height: 350px;
 }
 .card_container:hover {
   border-radius: 20px;
@@ -246,7 +248,9 @@ a {
   z-index: 1;
   border-radius: calc(var(--curve) * 1px);
   background-color: $black;
-  transform: translateY(100%);
+  // transform: translateY(100%);
+  transform: translateY(140%);
+
   transition: 0.2s ease-in-out;
   border-left: 1px solid $secondaryRedColor;
   border-top: 1px solid $secondaryRedColor;
