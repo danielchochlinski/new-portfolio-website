@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       {arr.map((el) => (
-        <div>some awesooe</div>
+        <div key={`${el}+2ndnav`}>some awesooe</div>
       ))}
     </div>
   );

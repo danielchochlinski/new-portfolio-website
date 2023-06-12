@@ -35,7 +35,7 @@ const SwiperVIew = ({ data }: any) => {
         loop={true}
       >
         {data?.images?.map((el: any) => (
-          <SwiperSlide>
+          <SwiperSlide key={el.photo}>
             <img
               src={el.photo}
               // width={1200}
