@@ -34,7 +34,9 @@ function AboutMeView(props: any) {
           "Thirdweb",
         ],
         {
-          radius: screen.width > 500 ? 320 : 100,
+          // radius: screen.width > 500 ? 320 : 100,
+          radius: 350,
+
           maxSpeed: "normal",
           initSpeed: "normal",
           direction: 120,
@@ -63,8 +65,6 @@ function AboutMeView(props: any) {
           Over the past six months, I transitioned to full-stack development,
           working on two projects. I enjoy the process of creating visually
           appealing solutions and finding innovative ways to solve problems.
-          Learning new technologies excites me as it opens doors to endless
-          possibilities.
           <br />
           <br />
           Throughout my journey, I have successfully contributed to both
@@ -81,8 +81,7 @@ function AboutMeView(props: any) {
           environments.
           <br />
           <br />
-          I am eager to continue my growth, expand my skill set, and make
-          meaningful contributions in the world of web development.
+          
         </p>
       </div>
       <div className={styles.tagCloud}>
