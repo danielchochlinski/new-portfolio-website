@@ -211,9 +211,9 @@ a {
 
 .card_container {
   border-radius: 28px;
-  border-top: 1px solid $primaryRedColor;
 
-  border-bottom: 1px solid $primaryRedColor;
+  border-top: 1px solid $primaryRedColorDim;
+  border-bottom: 1px solid $primaryRedColorDim;
   transition: 0.2s ease-in-out;
   max-width: 270px;
   width: 100%;
